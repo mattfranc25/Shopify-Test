@@ -52,10 +52,10 @@ export async function fetchProducts(): Promise<Product[]> {
 
   const headers: HeadersInit = {
     'Content-Type': 'application/json',
-    'X-Shopify-Storefront-Access-Token': process.env.NEXT_PUBLIC_SHOPIFY_ACCESS_TOKEN || '',
+    'X-Shopify-Storefront-Access-Token': "2be97a9fcf9a7bdf77d923608f3a10ba" || '',
   };
 
-  const response = await fetch(`https://${process.env.NEXT_PUBLIC_SHOPIFY_STORE_URL}/api/2024-07/graphql.json`, {
+  const response = await fetch(`https://test-store-pablo.myshopify.com/api/2024-07/graphql.json`, {
     method: 'POST',
     headers: headers,
     body: JSON.stringify({ query }),
