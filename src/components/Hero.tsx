@@ -10,7 +10,7 @@ import heroImage from '../assets/img/hero-image.png';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-[url('../assets/img/back.webp')] py-8 md:py-16">
+    <section className="relative bg-[url('../assets/img/back.webp')] bg-cover py-8 md:py-16">
       <Swiper
         modules={[Navigation, Pagination]}
         navigation={{
