@@ -10,7 +10,7 @@ import heroImage from '../assets/img/hero-image.png';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-white py-8 md:py-16">
+    <section className="relative bg-[url('../assets/img/back.webp')] py-8 md:py-16">
       <Swiper
         modules={[Navigation, Pagination]}
         navigation={{
@@ -52,10 +52,13 @@ const Hero: React.FC = () => {
                 <Image
                   src={heroImage}
                   alt="Hero Image"
-                  layout="fill"
-                  objectFit="cover"
+                  fill
                   priority
+                  style = {{objectFit: 'cover'}}
                   className="rounded-lg"
+                  sizes="(max-width: 768px) 100vw,
+                 (max-width: 1200px) 50vw,
+                 25vw"
                 />
               </div>
             </div>
@@ -88,10 +91,13 @@ const Hero: React.FC = () => {
                 <Image
                   src={heroImage}
                   alt="Hero Image"
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style = {{objectFit: 'cover'}}
                   priority
                   className="rounded-lg"
+                  sizes="(max-width: 768px) 100vw,
+                 (max-width: 1200px) 50vw,
+                 25vw"
                 />
               </div>
             </div>
