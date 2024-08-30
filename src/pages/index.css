@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+  .hidden-phone {
+    display: none;
+  }
+
+  .hero-flex-box {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .phone-relative {
+    position: static;
+    margin: 0 10px;
+  }
+
+  .pagination-button {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
